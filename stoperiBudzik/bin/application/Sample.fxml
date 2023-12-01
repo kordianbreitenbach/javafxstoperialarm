@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <center>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="229.0" prefWidth="276.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab fx:id="stoper" styleClass="stopermainclass" text="stoper">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="229.0" prefWidth="276.0">
+                           <children>
+                              <Text fx:id="stoperstoper" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="stoperclass" text="Stoper" textAlignment="CENTER" wrappingWidth="277.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Button fx:id="startstopstoper" mnemonicParsing="false" prefHeight="25.0" prefWidth="299.0" styleClass="buttonstartstopclass" text="Start" />
+                              <Button fx:id="pauzakontynuujstoper" mnemonicParsing="false" prefHeight="25.0" prefWidth="301.0" styleClass="buttonpauzakontynuujclass" text="Pauza" />
+                              <Text fx:id="licznikstoper" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="licznikstoperclass" text="0:00:00.000" textAlignment="CENTER" wrappingWidth="283.13671875">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="alarm" styleClass="alarmmainclass" text="alarm">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="alarmalarm" layoutX="112.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="alarmalarmclass" text="Alarm" textAlignment="CENTER" wrappingWidth="52.259765625">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="podajczasalarm" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="alarmpodajczasclass" text="Podaj czas" textAlignment="CENTER" wrappingWidth="276.0" />
+                        <TextField fx:id="godzinyalarm" layoutX="26.0" layoutY="47.0" prefHeight="25.0" prefWidth="64.0" promptText="godzina" styleClass="alarmgodzinaclass" />
+                        <TextField fx:id="minutaalarm" layoutX="106.0" layoutY="47.0" prefHeight="25.0" prefWidth="64.0" promptText="minuta" styleClass="alarmminutaclass" />
+                        <TextField fx:id="sekundaalarm" layoutX="192.0" layoutY="47.0" prefHeight="25.0" prefWidth="64.0" promptText="sekunda" styleClass="alarmsekundaclass" />
+                        <Text layoutX="91.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="15.13671875" />
+                        <Text layoutX="172.0" layoutY="64.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="15.13671875" />
+                        <Button fx:id="startstopalarm" layoutX="-1.0" layoutY="88.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" styleClass="alarmstartclass" text="start" textAlignment="CENTER" />
+                        <Button fx:id="pauzakontynuujalarm" layoutX="-1.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="283.0" text="pauza" textAlignment="CENTER" />
+                        <Text fx:id="pozostaloczasualarm" layoutX="-5.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pozostało czasu" textAlignment="CENTER" wrappingWidth="284.283203125" />
+                        <Text fx:id="licznikalarm" layoutX="90.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textAlignment="CENTER" wrappingWidth="94.259765625">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="budzik">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+</BorderPane>

@@ -65,9 +65,35 @@
                   </AnchorPane>
             </content>
           </Tab>
-            <Tab text="budzik">
+            <Tab fx:id="budzik" text="budzik">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Text fx:id="budzikbudzik" layoutX="-6.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budzik" textAlignment="CENTER" wrappingWidth="287.13671875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="czasbudzik" layoutX="-3.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="czas" textAlignment="CENTER" wrappingWidth="282.13671875" />
+                        <Text fx:id="licznikbudzik" layoutX="-4.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textAlignment="CENTER" wrappingWidth="283.13671875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="godzinybudzik" layoutX="14.0" layoutY="88.0" prefHeight="25.0" prefWidth="64.0" promptText="godzina" styleClass="alarmgodzinaclass" />
+                        <TextField fx:id="minutabudzik" layoutX="106.0" layoutY="88.0" prefHeight="25.0" prefWidth="64.0" promptText="minuta" styleClass="alarmminutaclass" />
+                        <TextField fx:id="sekundabudzik" layoutX="198.0" layoutY="88.0" prefHeight="25.0" prefWidth="64.0" promptText="sekunda" styleClass="alarmsekundaclass" />
+                        <Text layoutX="85.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="12.6015625" />
+                        <Text layoutX="174.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER" wrappingWidth="12.6015625" />
+                        <Button fx:id="budzikstart" layoutX="107.0" layoutY="124.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="61.0" text="start" textAlignment="CENTER" />
+                        <Text fx:id="podajczasbudzik" layoutX="8.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="podaj czas" textAlignment="CENTER" wrappingWidth="260.13671875" />
+                        <Text fx:id="pozostaloczasubudzik" layoutX="-4.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pozostalo czasu" textAlignment="CENTER" wrappingWidth="284.13671875" />
+                        <Text fx:id="countdownbudzik" layoutX="-3.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00:00" textAlignment="CENTER" wrappingWidth="282.13671875">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Text>
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>

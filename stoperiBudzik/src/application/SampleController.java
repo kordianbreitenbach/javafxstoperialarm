@@ -121,51 +121,11 @@ public class SampleController {
 	    
 	    public void initialize() {
 	    	Locale currentLocale = Locale.getDefault();
-	    	ResourceBundle bundle = ResourceBundle.getBundle("messages",currentLocale);
-	    	String podajCzasValue = bundle.getString("podajCzas");
-	    	String startbutt = bundle.getString("start");
-	    	String stopbutt = bundle.getString("stop");
-	    	String pauzabutt = bundle.getString("pauza");
-	    	String kontynuujbutt = bundle.getString("kontynuuj");
-	    	String godzinka = bundle.getString("godzina");
-	    	String minutka = bundle.getString("minuta");
-	    	String sekundka = bundle.getString("sekunda");
-	    	String pozostalo=bundle.getString("pozostalo");
-	    	String alarmo=bundle.getString("alarm");
-	    	String stopero=bundle.getString("stoper");
-	    	String budzikk=bundle.getString("budzik");
-	    	String czas=bundle.getString("czas");
-	    	String podajczas=bundle.getString("podajczas");
-	    	String pozostaloczasu=bundle.getString("pozostaloczasu");
-	    	 System.out.println("Wartość dla klucza 'podajCzas': " +stopbutt);
-	    	 startbuttt=startbutt;
-	    	 stopbuttt=stopbutt;
-	    	 pauzabuttt=pauzabutt;
-	    	 kontynuujbuttt=kontynuujbutt;
-	    	 podajczasalarm.setText(podajCzasValue);
-	    	 startstopstoper.setText(startbutt);
-	    	 startstopalarm.setText(startbutt);
-	    	 czasbudzik.setText(czas);
-	    	 podajczasbudzik.setText(podajczas);
-	    	 pozostaloczasubudzik.setText(pozostaloczasu);
-	    	 budzikstart.setText(startbutt);
-	    	 godzinyalarm.setPromptText(godzinka);
-	    	 minutaalarm.setPromptText(minutka);
-	    	 sekundaalarm.setPromptText(sekundka);
-	    	 godzinybudzik.setPromptText(godzinka);
-	    	 minutabudzik.setPromptText(minutka);
-	    	 sekundabudzik.setPromptText(sekundka);
-	    	 pozostaloczasualarm.setText(pozostalo);
-	    	 alarmalarm.setText(alarmo);
-	    	 stoperstoper.setText(stopero);
-	    	 alarm.setText(alarmo);
-	    	 stoper.setText(stopero);
-	    	 budzik.setText(budzikk);
-	    	 budzikbudzik.setText(budzikk);
-	    	 
-	    	 pauzakontynuujalarm.setText(pauzabutt);
-	    	 pauzakontynuujstoper.setText(pauzabutt);
-	    	 budzikstart.setText(startbuttt);
+	    	
+	    
+           ResourceBundle bundle = ResourceBundle.getBundle("messages",currentLocale);
+	    		Locale.setDefault(currentLocale);
+	    
 	        // Initialize the timeline with a KeyFrame that updates the stopwatch every millisecond
 	        timeline = new Timeline(new KeyFrame(Duration.millis(1), this::updateStopwatch));
 	        timeline.setCycleCount(Timeline.INDEFINITE);
@@ -423,8 +383,14 @@ public class SampleController {
 	            }
 	        });
 	        
-	        
-	        
+	        String startbutt = bundle.getString("start");
+	    	String stopbutt = bundle.getString("stop");
+	    	String pauzabutt = bundle.getString("pauza");
+	    	String kontynuujbutt = bundle.getString("kontynuuj");
+	    	 startbuttt=startbutt;
+	    	 stopbuttt=stopbutt;
+	    	 pauzabuttt=pauzabutt;
+	    	 kontynuujbuttt=kontynuujbutt;
 	    }
 	    // część odpowiedzialna za stoper 
 	    private void updateClock() {

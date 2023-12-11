@@ -74,12 +74,14 @@ public class SampleController {
 	private Text pozostaloczasubudzik;
 	@FXML
 	private Text countdownbudzik;
+	
 	 @FXML
 	    private TextField godzinyalarm;
 	 @FXML
 	    private TextField minutaalarm;
 	 @FXML
 	    private TextField sekundaalarm;
+	
 	 @FXML
 	 private TextField godzinybudzik;
 	 @FXML
@@ -131,6 +133,10 @@ public class SampleController {
 	    	String pozostalo=bundle.getString("pozostalo");
 	    	String alarmo=bundle.getString("alarm");
 	    	String stopero=bundle.getString("stoper");
+	    	String budzikk=bundle.getString("budzik");
+	    	String czas=bundle.getString("czas");
+	    	String podajczas=bundle.getString("podajczas");
+	    	String pozostaloczasu=bundle.getString("pozostaloczasu");
 	    	 System.out.println("Wartość dla klucza 'podajCzas': " +stopbutt);
 	    	 startbuttt=startbutt;
 	    	 stopbuttt=stopbutt;
@@ -139,15 +145,24 @@ public class SampleController {
 	    	 podajczasalarm.setText(podajCzasValue);
 	    	 startstopstoper.setText(startbutt);
 	    	 startstopalarm.setText(startbutt);
+	    	 czasbudzik.setText(czas);
+	    	 podajczasbudzik.setText(podajczas);
+	    	 pozostaloczasubudzik.setText(pozostaloczasu);
 	    	 budzikstart.setText(startbutt);
 	    	 godzinyalarm.setPromptText(godzinka);
 	    	 minutaalarm.setPromptText(minutka);
 	    	 sekundaalarm.setPromptText(sekundka);
+	    	 godzinybudzik.setPromptText(godzinka);
+	    	 minutabudzik.setPromptText(minutka);
+	    	 sekundabudzik.setPromptText(sekundka);
 	    	 pozostaloczasualarm.setText(pozostalo);
 	    	 alarmalarm.setText(alarmo);
 	    	 stoperstoper.setText(stopero);
 	    	 alarm.setText(alarmo);
 	    	 stoper.setText(stopero);
+	    	 budzik.setText(budzikk);
+	    	 budzikbudzik.setText(budzikk);
+	    	 
 	    	 pauzakontynuujalarm.setText(pauzabutt);
 	    	 pauzakontynuujstoper.setText(pauzabutt);
 	    	 budzikstart.setText(startbuttt);
